@@ -1,0 +1,48 @@
+@import url("reset.css");
+/* *{
+    color: slategrey;
+} */
+.header a{
+    color: darkslategray;
+}
+#hoverla{
+    color: deepskyblue;
+}
+h1{
+    color: blue;
+}
+h2{
+    color: crimson;
+}
+.block-main > p{
+    color: darkblue;
+}
+.block-main ~ p{
+    color: cadetblue;
+}
+.block-box + p{
+    color: fuchsia;
+}
+.block span{
+    color: rgb(49, 121, 8);
+}
+.block a{
+    color: coral;
+}
+.block-block p{
+    color: limegreen;
+}
+.block-title p,
+.title{
+    color: brown;
+}
+[class*="text"]{
+    color: chartreuse;
+}
+
+.footer a{
+    color: blueviolet;
+}
+.footer .tel{
+    color: goldenrod;
+}
