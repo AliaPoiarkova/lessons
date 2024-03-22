@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Serif:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@import url("fonts.css");
+
+@import url("reset.css");
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2b2929;
+  height: 100%;
+  overflow-x: hidden;
+}
+.header h1 {
+  font-size: 70px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: blue;
+  text-shadow: 7px 7px 8px rgba(79, 79, 90, 0.903);
+  margin-bottom: 20px;
+}
+h2 {
+  font-family: "Roboto Serif", sans-serif;
+  color: darkorange;
+  text-decoration: underline;
+  margin-bottom: 30px;
+}
+h3 {
+  color: rgba(31, 28, 28, 0.467);
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+.block-title{
+  font-size: 64px;
+  font-weight: 700;
+  text-align: center;
+}
+.block-image img{
+  width: 100%;
+}
+.block-image{
+  margin-bottom: 30px;
+}
+.block-text,
+.block-2{
+    line-height: 187.5%; /* 30/16 */
+    padding: 0 10px;
+}
+.block-text span {
+  color: rgba(245, 110, 62, 0.885);
+  font-weight: 700;
+  font-size: 18px;
+}
+.block-2 h4 {
+  font-weight: 500;
+  font-size: 35px;
+  text-align: center;
+  color: darkorange;
+  line-height: 111.428571%; /* 39/35 */
+  word-spacing: 2px;
+  margin-bottom: 20px;
+}
+.block-2 span {
+  font-weight: 700;
+  font-size: 20px;
+  color: rgba(0, 0, 255, 0.692);
+}
+.block-2 p {
+    font-family: "Proxima Nova";
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-color: #2b2929;
+}
+.block-2 li{
+  margin-bottom: 10px;
+}
+.block-block{
+  margin-bottom: 60px;
+}
+.block-3 h3 span{
+  text-transform: uppercase;
+}
+.block-3 h3,
+.block-4 h3{
+  font-size: 40px;
+  font-weight: 500;
+  text-align: center;
+}
+.items{
+  margin: 0 -5px;
+  font-size: 0;
+}
+.item{
+  width: 24%;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.content{
+  text-align: center;
+  font-size: 16px;
+}
+.content p{
+  line-height: 187.5%; /* 30/16 */
+}
+.content h4{
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.block-4{
+  background-color: #E3E3E3;
+  padding: 30px 0 60px;
+}
+.block-4-images{
+  margin: 0 -6px;
+  font-size: 0;
+}
+.block-4-image-card{
+  display: inline-block;
+  margin: 0 6px 12px 6px;
+}
+.block-4-image img{
+  max-width: 200px;
+}
+.footer p{
+  padding: 20px 0;
+  font-family: "Proxima Nova";
+  font-weight: 300;
+  text-align: center;
+}
+
+
+
