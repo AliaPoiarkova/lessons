@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+
+@import url("reset.css");
+body {
+  font-family: "Rubik Scribble", sans-serif;
+  font-size: 30px;
+  color: #fff;
+  height: 100%;
+  line-height: 1;
+  background: linear-gradient(90deg, rgba(0, 245, 255, 0.9472382703081232) 9%, rgba(226, 0, 255, 1) 52%, rgba(36, 0, 255, 0.45143995098039214) 100%);
+}
+h1{
+  color: black;
+  font-size: 62px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px 0 20px 0;
+  text-shadow: 3px 3px 5px white;
+}
+span{
+  padding-left: 40px;
+}
+.header{
+  margin-bottom: 45px;
+}
+.wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.page-inner,
+.vectors,
+.vectors-2{
+  margin-bottom: 60px;
+}
+.block{
+  display: inline-block;
+  width: 50%;
+}
+.arrow-color{
+  opacity: 0.5;
+}
+.icons{
+  margin-bottom: 80px;
+}
+.item-item{
+  margin-bottom: 30px;
+}
+.item-item:last-child{
+  margin-bottom: 0;
+}
+.icon img{
+  width: 43px;
+}
+.item a{
+  width: 100px;
+  height: 100px;
+  background-color: #0000ffb3;
+  border-radius: 50%;
+}
+.item img{
+  padding-left: 26px;
+  padding-top: 24px;
+}
+.vectors-2{
+  text-align: right;
+}
+.footer{
+  padding-bottom: 60px;
+}
+
