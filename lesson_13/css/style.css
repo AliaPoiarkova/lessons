@@ -69,8 +69,8 @@ body {
 .list__item {
 }
 .list__link:hover {
+  color: #f0ac7c;
   text-decoration: underline;
-  color: #B1B1B1;
 }
 .list__link:active{
   color: #442a2a;
@@ -207,6 +207,14 @@ body {
 .items-offer__link{
   position: relative;
   padding: 0 0 0 36px;
+}
+.items-offer__link:hover{
+  color: #f0ac7c;
+  text-decoration: underline;
+}
+.items-list__link a:hover{
+  color: #f0ac7c;
+  text-decoration: underline;
 }
 .items-offer__image{
   position: absolute;
