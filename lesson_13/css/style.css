@@ -17,6 +17,7 @@ body {
   overflow: clip;
   display: flex;
 	flex-direction: column;
+  background-color: #F8F8F8;
 }
 .wrapper > main{
   flex-grow: 1;
@@ -102,7 +103,8 @@ body {
 }
 /* ---Header2-- */
 .header2{
-  padding-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .menu-header2-middle{
   display: flex;
@@ -139,6 +141,9 @@ body {
   border-radius: 8px;
   border: 1px solid #B1B1B1;
   background: #FFF;
+}
+.header2{
+  background-color: #FFF;
 }
 .header2__logo {
   display: flex;
