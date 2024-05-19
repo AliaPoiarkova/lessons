@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 14</title>
+  </head>
+  <body>
+    <div class="wrapper">
+     <header class="header">
+      <div class="header__container">
+        <h1 class="header__title">Урок 14 Форми</h1>
+      </div>
+     </header>    
+      <main class="page">
+        <div class="infoblock">
+          <div class="infoblock__container">
+            <h2 class="page-title">Оформлення замовлення</h2>
+            <div class="order-boxes">
+              <form action="#" class="form">
+                <div class="informacion-box box-buyer">
+                  <div class="informacion-box__title title-buyer">
+                    <h2 class="informacion-box__text informacion-box__text--info">Інформація про покупця</h2>
+                  </div>
+                  <div class="form__buyer buyer-form-inner">
+                        <div class="buyer-form-inner__name">
+                          <div class="form__line">
+                            <input  name="form[]" class="form__input"  placeholder="Прізвище" type="text">
+                          </div>
+                          <div class="form__line">
+                            <input  name="form[]" class="form__input"  placeholder="Ім’я" type="text">
+                          </div>
+                          <div class="form__line">
+                            <input  name="form[]" class="form__input"  placeholder="По батькові" type="text">
+                          </div>
+                        </div>
+                        <div class="buyer-form-inner__contacts">
+                          <div class="form__line">
+                            <input  required name="form[]" placeholder="Контактний телефон" type="tel" class="form__input">
+                          </div>
+                          <div class="form__line">
+                            <input  required name="form[]" placeholder="E-mail" type="email" class="form__input">
+                          </div>
+                        </div>
+                      </div>                 
+                      <div class="form__checkbox checkbox">
+                        <input  class="checkbox__input" id="check" value="yes" name="form[]"  type="checkbox">
+                        <label class="checkbox__label" for="check">Отримуватиме замовлення інша людина</label>
+                      </div>                    
+                </div>
+                <div class="informacion-box box-delivery">
+                      <div class="informacion-box__title">
+                        <h2 class="informacion-box__text informacion-box__text--delivery">Вибір способу доставки</h2>
+                      </div>
+                      <div class="informacion-box__content method-delivery">                
+                        <div class="method-delivery__item">
+                          <input class="method-delivery__input" checked type="radio" name="radio" id="free">
+                          <label for="free" class="method-delivery__label">                    
+                            <img src="img/delivery/icon-shop.svg" alt="icon-shop">
+                            <span class="method-delivery__subtitle">Самовивіз із магазину</span>
+                            <span class="method-delivery__price">Бесплатно</span>
+                          </label>
+                        </div> 
+                        <div class="method-delivery__item"> 
+                          <input class="method-delivery__input" checked type="radio" name="radio" id="new-mail">                 
+                          <label for="new-mail" class="method-delivery__label">                                        
+                              <img src="img/delivery/np.svg" alt="icon-delivery">                     
+                              <span class="method-delivery__subtitle">Доставка Нова Пошта</span>
+                              <span class="method-delivery__price">≈ від 500 грн</span>
+                          </label>
+                        </div>                     
+                        <div class="method-delivery__item">
+                          <input class="method-delivery__input" checked type="radio" name="radio" id="courier">
+                          <label for="courier" class="method-delivery__label">                                          
+                              <img src="img/delivery/courier.svg" alt="icon-courier">                     
+                              <span class="method-delivery__subtitle">Доставка кур'єром</span>
+                              <span class="method-delivery__price">≈ від 200 грн</span>
+                          </label>
+                        </div>                   
+                      </div>
+                      <div class="informacion-box__content schedule-delivery">
+                        <div class="text-schedule__location">
+                          <img src="img/delivery/location.svg" alt="icon-location">
+                        </div>
+                        <div class="schedule-delivery__text text-schedule">
+                          <p class="text-schedule__time">Графік роботи: щодня з 9:00 до 18:00
+                          </p>
+                          <p class="text-schedule__address">м. Київ, пров. Ізяславський 52, пов. 2</p>
+                        </div>
+                        <div class="schedule-delivery__button">
+                          <a target="_blank" href="https://maps.app.goo.gl/4A4NZZjCJyB5NV719" class="button-delivery">На мапі</a>
+                        </div>
+                      </div>
+                </div>          
+                <div class="informacion-box box-payment">
+                      <div class="informacion-box__title">
+                        <h2 class="informacion-box__text informacion-box__text--pay">Вибір способу оплати</h2>
+                      </div>  
+                        <fieldset class="box-payment__group">
+                          <div class="box-payment__radio">
+                            <input class="box-payment__input" checked  id="payment1" name="payment"  value="cash" type="radio">
+                            <label class="box-payment__label" for="payment1"><img src="img/payment/radiobtn.svg" alt="icon-radiobtn">Готівкою при отриманні (Післясплата)
+                              
+                            </label>
+                          </div>
+                          <div class="box-payment__radio">
+                            <input class="box-payment__input" checked  id="payment2" name="payment"  value="privat" type="radio">
+                            <label class="box-payment__label" for="payment2"><img src="img/payment/radiobtn.svg" alt="icon-radiobtn">Privat Pay</label>
+                            <img src="img/payment/master-card-logo.svg" alt="icon-master-card">
+                            <img src="img/payment/visa-card-logo.svg" alt="icon-visa-card">
+                          </div>
+                          <div class="box-payment__radio">
+                            <input class="box-payment__input" checked  id="payment3" name="payment"  value="privat" type="radio">
+                            <label class="box-payment__label" for="payment3"><img src="img/payment/radiobtn.svg" alt="icon-radiobtn">Privat Pay</label>
+                            <img src="img/payment/privat-pay-logo.svg" alt="icon-privat">
+                          </div>
+                          <div class="box-payment__radio">
+                            <input class="box-payment__input" checked  id="payment4" name="payment"  value="credit" type="radio">
+                            <label class="box-payment__label" for="payment4"><img src="img/payment/radiobtn.svg" alt="icon-radiobtn">Кредит від Krovato</label>
+                          </div>
+                          <div class="box-payment__radio">
+                            <input class="box-payment__input" checked  id="payment5" name="payment"  value="credit" type="radio">
+                            <label class="box-payment__label" for="payment5"><img src="img/payment/radiobtn.svg" alt="icon-radiobtn">Оплата частинами ПриватБанк</label>
+                            <img src="img/payment/privaty-credit-logo.svg" alt="icon-privaty-credit">
+                          </div>
+                          <div class="box-payment__radio">
+                            <input class="box-payment__input" checked  id="payment6" name="payment"  value="mono" type="radio">
+                            <label class="box-payment__label" for="payment6"><img src="img/payment/radiobtn.svg" alt="icon-radiobtn">Оплата частинами МоноБанк</label>
+                            <img src="img/payment/mono-bank-logo.svg" alt="icon-mono-bank">
+                          </div>
+                        </fieldset>
+                </div>
+                <div class="informacion-box box-comment">
+                    <div class="informacion-box__title">
+                      <h2 class="informacion-box__text informacion-box__text--comments">Коментар до замовлення</h2>
+                    </div>
+                    <!-- <form class="form-comment" action="#"> -->
+                    <div class="form-comment">
+                    <textarea placeholder="Ваш коментар" name="form[]" id="#" cols="30" rows="10" class="form-comment__textarea"></textarea>
+                    </div>
+                    <button class="form__button" type="submit">ОФОРМИТИ ЗАМОВЛЕННЯ
+                    </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+     <footer class="footer">
+          <p>© KROVATO - Технології сну - 2022. Всі права захищені.</p>
+    </footer>
+    </div>
+  </body>
+</html>
