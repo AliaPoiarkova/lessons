@@ -221,9 +221,7 @@ background-color: #6F3FAA;
   color: #fff;
   padding: 11px 20px;
   border-radius: 8px;
-  
   line-height: 126%; /* 24/19 */
-  
   transition: all 0.3s;
 }
 .middle-header__button span::before{
@@ -239,7 +237,7 @@ background-color: #6F3FAA;
   }
 }
 @media(any-hover: hover){
-  .middle-header__button:hover::before{
+  .middle-header__button span:hover::before{
     content: "";
     background: url("../img/header/close-catalog.svg") 0 0 no-repeat;
   }
