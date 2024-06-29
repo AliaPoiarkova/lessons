@@ -467,7 +467,7 @@ body {
 
   // .popular-stales__title
   &__title{
-    font-size: 29px;
+    font-size: 28px;
     text-transform: uppercase;
     text-align: center;
     
@@ -808,11 +808,20 @@ body {
     @media(max-width: 500px){
       font-size: 30px;
     }
+    @media(max-width: 362px){
+      font-size: 28px;
+    }
+    @media(max-width: 320px){
+      font-size: 25px;
+    }
   }
 
   // .follow__title--margin
   &__title--margin {
     margin-bottom: 60px;
+    @media(max-width: 320px){
+      margin-bottom: 37px;
+    }
   }
 
   // .follow__img-block
@@ -825,10 +834,12 @@ body {
   // .follow__img-block--margin
   &__img-block--margin{
     margin-bottom: 70px;
+    @media(max-width: 320px){
+      margin-bottom: 30px;
+    }
   }
   &__link{
-    width: 200px;
-    height: 200px;
+    flex: 0 1 200px;
   }
   // .follow__image
   &__image{
