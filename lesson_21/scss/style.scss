@@ -1,0 +1,102 @@
+@use "sass:math";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+
+@import url(https://fonts.googleapis.com/css?family=Roboto+Serif:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Orbitron:regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+
+@import "_icons.scss";
+@import "_fonts.scss";
+@import "_reset.scss";
+@import "_mixins.scss";
+
+// Налаштування адаптивної сітки 
+// Мінімальна ширина сторінки
+$minWidth: 320;
+// Ширина полотна (макету)
+$maxWidth: 1920;
+// Ширина обмежуючого контейнера (0 = немає обмеження)
+$maxWidthContainer: 1320;
+// Загальний відступ у контейнера
+// (30 = по 15px ліворуч і праворуч, 0 = немає відступу)
+$containerPadding: 40;
+// Ширина спрацьовування першого брейкпоінту
+$containerWidth: $maxWidthContainer + $containerPadding;
+
+// ==========================================================
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: rgb(220, 20, 107);
+}
+.wrapper{
+  min-height: 100%;
+  overflow: clip;
+  display: flex;
+	flex-direction: column;
+}
+.wrapper > main{
+  flex-grow: 1;
+}
+[class*="__container"]{
+	max-width: #{$maxWidthContainer}px;
+  padding: 0 math.div($containerPadding, 2) + px;
+  margin: 0 auto;
+}
+// ============================================
+.header {
+  padding-top: toRem(20);
+
+  // .header__title
+
+  &__title {
+    font-size: toRem(40);
+    font-weight: 700;
+    text-align: center;
+  }
+  .title{
+    margin-bottom: toRem(20);
+  }
+}
+.page {
+  
+  // .page__title
+  &__title{
+    font-size: toRem(30);
+  }
+// .page__subtitle{
+  &__subtitle{
+    font-size: toRem(22);
+  }
+  &__title,
+  &__subtitle,
+  span{
+    color: #000;
+  }
+  // .page__items
+  &__items{
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+
+  // .page__item
+  &__item {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    background-color: #fff;
+    margin-bottom: 30px;
+    border-radius: toRem(8);
+    padding: toRem(20);
+    align-items: center;
+    line-height: 1.2; /* 24/20 */
+    color: #000000aa;
+  }
+}
+.footer{
+  padding-bottom: toRem(20);
+}
