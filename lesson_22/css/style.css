@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap");
+@import url(https://fonts.googleapis.com/css?family=Roboto+Serif:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Exo:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Orbitron:regular,500,600,700,800,900);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
+[class*=_icon-]::before {
+  font-family: "icons";
+  speak: never;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+._icon-bag::before {
+  content: "\e900";
+}
+
+._icon-account::before {
+  content: "\e901";
+}
+
+._icon-facebook::before {
+  content: "\e902";
+}
+
+._icon-filtres::before {
+  content: "\e903";
+}
+
+._icon-insta::before {
+  content: "\e904";
+}
+
+._icon-instagram::before {
+  content: "\e905";
+}
+
+._icon-search::before {
+  content: "\e906";
+}
+
+._icon-shop::before {
+  content: "\e907";
+}
+
+._icon-twiter::before {
+  content: "\e908";
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik Regular"), local("Rubik-Regular"), url("../fonts/Rubik-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik Medium"), local("Rubik-Medium"), url("../fonts/Rubik-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Rubik";
+  src: local("Rubik Bold"), local("Rubik-Bold"), url("../fonts/Rubik-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova Light"), local("Proxima-Nova-Light"), url("../fonts/ProximaNova-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova Bold Italic"), local("Proxima-Nova-Bold-Italic"), url("../fonts/ProximaNova-BoldIt.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Proxima Nova";
+  src: local("Proxima Nova Semi Bold"), local("Proxima-Nova-Semi-Bold"), url("../fonts/Proxima-Nova-Sbold.woff") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Integral CF";
+  src: local("IntegralCF-Bold"), local("Integral-CF-Bold"), url("../fonts/IntegralCF-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "icons";
+  src: url("../fonts/icons.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  display: inline-block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  line-height: 1;
+  height: 100%;
+}
+
+/* FORM */
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+button,
+select,
+option {
+  cursor: pointer;
+}
+
+input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  background-color: rgb(220, 20, 107);
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: clip;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.wrapper > main {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+[class*=__container] {
+  max-width: 1320px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header {
+  padding-top: 1.25rem;
+}
+.header__title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+}
+.header .title {
+  margin-bottom: 1.25rem;
+}
+
+.page__title {
+  font-size: 1.875rem;
+}
+.page__subtitle {
+  font-size: 1.375rem;
+}
+.page__title, .page__subtitle,
+.page span {
+  color: #000;
+}
+.page__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.page__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  margin-bottom: 30px;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.2; /* 24/20 */
+  color: rgba(0, 0, 0, 0.6666666667);
+}
+
+.footer {
+  padding-bottom: 1.25rem;
+}

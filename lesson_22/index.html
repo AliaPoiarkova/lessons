@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 22</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__title title">Урок №22 (Основи JavaScript. Частина №2)</div>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__container">
+                <div class="page__items">
+                    <div class="page__item">
+                        <h2 class="page__title">Задача №1</h2>
+                        <span> Що потрапить в консоль?</span>
+                        <p>let someVar = 0;
+                            ++someVar;
+                            if (someVar) {
+                            console.log(someVar);
+                            }</p>
+                        <p><span>Відповідь: В консоль потрапить 1, тому що інкремент (++) додає одиницю до числа.</span> </p>
+                    </div>
+                    <div class="page__item">
+                        <h2 class="page__title">Задача №2</h2>
+                        <span>За допомогою циклу FOR виведіть в консоль 10 рядків:</span>
+                        <p>Пункт №1
+                            Пункт №2
+                            і т.д.
+                            </p>
+                        <p><span>Відповідь: for(let i=1; i<=10; i++){
+                            console.log(`Пункт ${i}`)
+                            }</span> 
+                    </div>
+                    <div class="page__item">
+                        <h2 class="page__title">Задача №3</h2>
+                        <span>Що потрапить в консоль?</span>
+                        <p>if (2 * 20 <= 10 || 30 / 2 < 5 && 10 <= "10" || 20 === "20") {
+                            console.log('000');
+                            }</p>
+                        <p><span>Відповідь: В консоль нічого не потрапить, тому що ні одна умова не виконується (False)</span></p>
+                    </div>
+                    <div class="page__item">
+                        <h2 class="page__title">Задача №4</h2>
+                        <p>Створіть функцію, яка повертає результат ділення числа a на число b з додаванням рядка "Результат ділення: "
+                            Викличте функцію передаючі різні значення, у тому числі не передаючи зовсім.
+                            Функція не має повертати NaN, Infinite або помилку </p>
+                        <div class="answer">Відповідь:
+                         <p>function calcNum(a, b){</p> 
+                            <p>const result =  a / b</p>
+                            <p>if(Number.isNaN(result)){</p>
+                               <p> return `Дані помилкові`
+                            }</p>
+                            <p>else if(b === 0){
+                                console.log(`На нуль ділити не можна`)
+                            }</p>
+                            <p>else {
+                                return `Результат ділення: ${result}`
+                            }}</p>
+                        </div>
+                    </div>
+                    <div class="page__item">
+                        <h2 class="page__title">Задача №5</h2>
+                        <p>Створіть масив даних - 5 елементів, один з яких число 10
+                        Обробіть масив за допомогою методу перебору
+                        Перевіряйте елемент на відповідність числу 10, та у разі відповідності, виводьте в консоль </p>
+                        <div class="answer"> Відповідь:
+                            <p>let monthNum = [2, 4, 7, 10, 12];</p>
+                            <p>monthNum.forEach(monthNum => {</p>
+                            <p> if(monthNum === 10){</p>
+                            <p> console.log(monthNum);</p>
+                            <p> }
+                            }
+                            )</p>
+                        </div>
+                        
+
+   
+       
+   
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <h2>Весна 2024р.</h2>
+            </div>
+        </footer>
+    </div>
+    <script src="js/skript.js"></script>
+</body>
+</html>
